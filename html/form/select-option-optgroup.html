@@ -1,0 +1,65 @@
+<!-- select 태그는 콤보박스를 생성하는 태그입니다.-->
+<!-- option 태그는 콤보박스에 항목 하나를 추가할 때 사용합니다.-->
+<!-- optgroup 태그는 option 태그들을 그룹화할 때 사용합니다.-->
+<form>
+    <fieldset>
+        <legend>개인 정보 입력</legend>
+            <p>
+                <label for="city">지역</label>
+            </p>
+            <!-- size 속성은 콤보박스의 항목 개수를 지정합니다. -->
+            <select name="city" id="city" size="3">
+                <optgroup label="서울시">
+                    <option value="강남구">강남구</option>
+                    <option value="강북구">강북구</option>
+                    <option value="서초구">서초구</option>
+                </optgroup>
+                <optgroup label="경기도 성남시">
+                    <option value="중원구">중원구</option>
+                    <option value="분당구">분당구</option>
+                </optgroup>
+            </select>
+    </fieldset>
+</form>
+
+<form>
+    <fieldset>
+        <legend>개인 정보 입력</legend>
+            <p>
+                <label for="city">지역</label>
+            </p>
+            <!-- multiple 속성은 콤보박스에서 여러 항목을 선택할 수 있도록 합니다. -->
+            <select name="city" id="city" multiple>
+                <optgroup label="서울시">
+                    <option value="강남구">강남구</option>
+                    <option value="강북구">강북구</option>
+                    <option value="서초구">서초구</option>
+                </optgroup>
+                <optgroup label="경기도 성남시">
+                    <option value="중원구">중원구</option>
+                    <option value="분당구">분당구</option>
+                </optgroup>
+            </select>
+    </fieldset>
+</form>
+
+<form>
+    <fieldset>
+        <legend>개인 정보 입력</legend>
+            <p>
+                <label for="city">지역</label>
+            </p>
+            <!-- selected 속성은 기본적으로 선택된 항목을 지정합니다. -->
+            <select name="city" id="city" multiple>
+                <optgroup label="서울시">
+                    <option value="강남구">강남구</option>
+                    <option value="강북구">강북구</option>
+                    <option value="서초구" selected>서초구</option>
+                </optgroup>
+                <optgroup label="경기도 성남시">
+                    <option value="중원구">중원구</option>
+                    <option value="분당구">분당구</option>
+                </optgroup>
+            </select>
+    </fieldset>
+</form>
