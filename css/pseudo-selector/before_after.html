@@ -1,0 +1,13 @@
+<!-- before와 after 의사 요소를 사용한 예제 -->
+<!-- content에 있는 요소가 앞이나 뒤에 장식용으로 붙게 됨-->
+<style>
+    p::before{
+        content: '<before>';
+    }
+    p::after{
+        content: '<after>';
+    }
+</style>
+<body>
+    <p>이 문장은 before와 after 의사 요소가 적용된 예제입니다.</p>
+</body>
