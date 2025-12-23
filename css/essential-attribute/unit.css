@@ -1,0 +1,52 @@
+/* % 단위는 부모 요소의 크기를 기준으로 상대적인 크기를 지정할 때 사용된다. */
+.parent{
+    font-size: 16px;
+}
+.child{
+    font-size: 80%; /* 부모 요소의 80% 12.8px */
+}
+.child-to-child{
+    font-size: 80%; /* 부모 요소의 80% 10.24px */;
+}
+
+/* em 단위는 부모 요소의 폰트 크기를 기준으로 상대적인 크기를 지정할 때 사용된다. */
+.parent{
+    font-size: 16px;
+}
+
+.child{
+    font-size: 2em; /* 부모 요소의 2배 32px */
+}
+
+.child-to-child{
+    font-size: 2em; /* 부모 요소의 2배 64px */
+}
+
+/* rem 단위는 최상위 요소(html)의 폰트 크기를 기준으로 상대적인 크기를 지정할 때 사용된다. */
+html{
+    font-size:1rem;
+}
+.parent{
+    font-size:1rem; /* 16px */
+}
+.child{
+    font-size:2rem; /* 32px */
+}
+
+/* vw 단위는 뷰포트 너비(Viewport Width)를 기준으로 상대적인 크기를 지정할 때 사용된다. */
+/* 기준 뷰포트 너비 900px 일 때 */
+.parent{
+    font-size:1vw; /* 뷰포트 너비의 1% 9px */
+}
+.child{
+    font-size:2vw; /* 뷰포트 너비의 2% 18px */
+}
+
+/* vh 단위는 뷰포트 높이(Viewport Height)를 기준으로 상대적인 크기를 지정할 때 사용된다. */
+/* 기준 뷰포트 높이 400px 일 때 */
+.parent{
+    font-size:1vh; /* 뷰포트 높이의 1% 4px */
+}
+.child{
+    font-size:2vh; /* 뷰포트 높이의 2% 8px */
+}
