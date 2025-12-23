@@ -1,0 +1,4 @@
+/* font-size 속성은 글자의 크기를 지정한다. 단위로는 px, em, %, pt 등이 사용된다. */
+p{
+    font-size: 14px;
+}

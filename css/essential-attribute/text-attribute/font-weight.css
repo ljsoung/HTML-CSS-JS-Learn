@@ -1,0 +1,11 @@
+/* font-weight 속성은 글자의 두께를 지정한다. 숫자로는 100~900까지 지정할 수 있다. */
+p{
+    font-weight: 100;
+    font-weight: 400;
+}
+
+/* font-weight 속성은 키워드로 표시할 수도 있다. normal은 400, bold는 700과 동일하다. */
+p{
+    font-weight: normal;
+    font-weight: bold;
+}

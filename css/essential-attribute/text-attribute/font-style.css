@@ -1,0 +1,11 @@
+/* font-style 속성은 글꼴 스타일을 지정한다. 
+   normal, italic, oblique 값이 사용된다. */
+.normal{
+    font-style: normal; /* 기본값 */
+}
+.italic{
+    font-style: italic; /* 기울임꼴 */
+}
+.oblique{
+    font-style: oblique; /* 경사꼴 */
+}
