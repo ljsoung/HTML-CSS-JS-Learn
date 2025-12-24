@@ -1,0 +1,22 @@
+<!-- z-index 속성값이 클수록 요소가 더 앞쪽에 배치된다. -->
+<style>
+    .box{
+        width:100px;
+        height:100px;
+    }
+    .red-box{
+        background-color: red;
+        position: relative;
+        z-index:10;
+    }
+    .green-box{
+        background-color: green;
+        position:absolute;
+        left:0;
+        top:0;
+    }
+</style>
+<body>
+    <div class="box red-box"></div>
+    <div class="box green-box"></div>
+</body>

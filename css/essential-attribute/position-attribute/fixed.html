@@ -1,0 +1,28 @@
+<!-- fixed 속성은 스크롤에 상관없이 고정된 위치에 배치 -->
+<style>
+    body{
+        margin:0;
+        height:4000px;
+    }
+    .box{
+        width: 100px;
+        height:100px;
+    }
+    .red-box{
+        background-color: red;
+    }
+    .green-box{
+        background-color: green;
+        position: fixed;
+        left: 100px; /* 왼쪽을 기준으로 100px 이동 */
+        top:100px; /* 위쪽을 기준으로 100px 이동 */
+    }
+    .blue-box{
+        background-color: blue;
+    }
+</style>
+<body>
+    <div class="box red-box"></div>
+    <div class="box green-box"></div>
+    <div class="box blue-box"></div>
+</body>

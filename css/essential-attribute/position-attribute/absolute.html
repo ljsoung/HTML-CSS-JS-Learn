@@ -1,0 +1,27 @@
+<!-- absolute 속성은 문서의 흐름에서 벗어나서 이동 -->
+<style>
+    body{
+        margin: 0;
+    }
+    .box{
+        width: 100px;
+        height:100px;
+    }
+    .red-box{
+        background-color: red;
+    }
+    .green-box{
+        background-color: green;
+        position: absolute;
+        left: 100px; /* 왼쪽을 기준으로 100px 이동 */
+        top:100px; /* 위쪽을 기준으로 100px 이동 */
+    }
+    .blue-box{
+        background-color: blue;
+    }
+</style>
+<body>
+    <div class="box red-box"></div>
+    <div class="box green-box"></div>
+    <div class="box blue-box"></div>
+</body>
