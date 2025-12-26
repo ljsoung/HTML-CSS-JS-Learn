@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+            .ground{
+                margin: 0;
+                border: 1px solid black;
+                width: 304px;
+                height: 390px;
+                padding: 28px;
+                margin: 100px auto;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .google-login i{
+                color: #4285F4;
+            }
+            .google-login{
+                width: 228px;
+                height: 44px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 14px;
+                font-weight: bold;
+                color: #504444;
+                border: 1px solid black;
+                display: flex; /* flexbox 레이아웃 적용 */
+                align-items: center; /* 수직 정렬 */
+                justify-content: center; /* 수평 정렬 */
+                gap: 8px;
+            }
+            .or{
+                font-family: 'Roboto', sans-serif;
+                font-size: 16px;
+                font-weight: bold;
+                color: #504444;
+            }
+            input{
+                width: 228px;
+                height: 44px;
+                background-color: #eaeaea;
+                margin-bottom: 28px;
+            }
+            button{
+                width: 228px;
+                height: 44px;
+                background-color: #373F3C;
+                font-family: 'Roboto', sans-serif;
+                font-size: 14px;
+                color: #ffffff;
+                margin-bottom: 20px;
+                
+            }
+            .forgot-password{
+                font-family: 'Roboto', sans-serif;
+                font-size: 14px;
+                color: #2C3432;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="ground">
+            <div class="google-login">
+                <i class="fa-brands fa-google"></i>
+                Log in with Google
+            </div>
+            <p class="or">or</p>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button>LOGIN</button>
+            <p class="forgot-password">Forgot your password?</p>
+        </div>
+    </body>
+</html>
