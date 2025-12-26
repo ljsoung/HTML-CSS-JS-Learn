@@ -1,0 +1,38 @@
+<!-- transition-timing-function을 사용하여 변환 시간을 조절할 수 있다.-->
+<style>
+    .container .bar{
+        background-color: red;
+        width: 10px;
+        transition-property: width;
+        transition-duration: 5s;
+    }
+    .container:hover .bar{
+        width:110px;
+    }
+
+    .bar:nth-child(1){
+        transition-timing-function: cubic-bezier(0, 1.08, 1, 1);
+    }
+    .bar:nth-child(2){
+        transition-timing-function: ease;
+    }
+    .bar:nth-child(3){
+        transition-timing-function: ease-in;
+    }
+    .bar:nth-child(4){
+        transition-timing-function: ease-out
+    }
+    .bar:nth-child(5){
+        transition-timing-function: ease-in-out;
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <div class="bar">linear</div>
+        <div class="bar">ease</div>
+        <div class="bar">ease-in</div>
+        <div class="bar">ease-out</div>
+        <div class="bar">ease-in-out</div>
+    </div>
+</body>
