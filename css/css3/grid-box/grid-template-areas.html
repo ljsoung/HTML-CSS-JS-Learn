@@ -1,0 +1,29 @@
+<style>
+    .grid-container{
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "sidebar content content"
+        "footer footer footer";
+    }
+    #header{
+        grid-area: header;
+    }
+    #sidebar{
+        grid-area: sidebar;
+    }
+    #content{
+        grid-area: content;
+    }
+    #footer{
+        grid-area: footer;
+    }
+</style>
+<body>
+    <div class="grid-container">
+        <p id="header">header</p>
+        <p id="sidebar">sidebar</p>
+        <p id="content">content</p>
+        <p id="footer">footer</p>
+    </div>
+</body>
