@@ -1,0 +1,11 @@
+<p>text-1</p>
+<p>text-2</p>
+<p>text-3</p>
+<script>
+  const pEls = document.querySelectorAll("p");
+  pEls.forEach((el) => {
+    el.addEventListener("click", () => {
+      console.log(this);
+    });
+  })
+</script>
